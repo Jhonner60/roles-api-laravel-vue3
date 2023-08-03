@@ -1,0 +1,29 @@
+POST http://127.0.0.1:8000/api/v1/auth/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "stich",
+    "email": "tichi@mail.com",
+    "password": "tichi123"
+}
+
+### Login
+POST http://127.0.0.1:8000/api/v1/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "tichi@mail.com",
+    "password": "tichi123"
+}
+
+### Perfil
+POST http://127.0.0.1:8000/api/v1/auth/profile
+Accept: application/json
+Authorization: Bearer 3|iMEVA7mTEXfID7yX6CrZOja15lSkEg8VUi3nezg8
+
+### Salir
+POST http://127.0.0.1:8000/api/v1/auth/logout
+Accept: application/json
+Authorization: Bearer 3|iMEVA7mTEXfID7yX6CrZOja15lSkEg8VUi3nezg8
